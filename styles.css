@@ -1,0 +1,141 @@
+@font-face {
+        font-family: 'Trueno';
+        src: url(/font/Trueno/truenorg.otf);
+        font-weight: normal;
+}
+@font-face {
+        font-family: 'Trueno';
+        src: url(/font/Trueno/truenoexbd.otf);
+        font-weight: bold;
+}
+@font-face {
+        font-family: 'Trueno';
+        src: url(/font/Trueno/truenoultlt.otf);
+        font-weight: lighter;
+}
+body{
+    background-color: #232323;
+}
+.ikBen-container{
+    padding-left: 10%;
+    border: 1px solid white;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 1190px) {
+    .ikBen-container{
+        padding-left: 2%;
+    }
+}
+.homeText {
+    margin: 0px;
+/*    border: 0.01px solid greenyellow;*/
+    font-family: 'Trueno';
+    font-weight: bold;
+    color: white;
+}
+#ikBenEen {
+    color: #484848;
+    font-size: 6em;
+    line-height: 90%;
+}
+.software-container {
+    display: flex;
+    align-items: flex-end;;
+/*    border: 0.01px solid red;*/
+}
+#software {
+    font-size: 9em;
+    line-height: 90%;
+}
+#inOp {
+    font-size: 0.8em;
+}
+.inOp-container {
+    margin: 10px;
+    width: 132px;
+    height: 30px;
+    background-color: #FF8113;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    margin-left: 10px;
+    background-color: #FF8113;
+    padding: 10px;
+    margin-bottom: 14px;
+    height: 1px;
+    width: 1px;
+}
+
+
+.overMij-container {
+    border: 1px solid white;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    color: white;
+    font-family: 'Trueno';
+}
+#overMij {
+    color: #FF8113;
+    font-weight: bold;
+}
+.fotoText-overMij-container {
+    display: flex;
+}
+.overMij-text {
+
+}
+.projecten-container {
+    border: 1px solid white;
+    color: white;
+    height: auto;
+    min-height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Trueno';
+
+    align-items: center;
+}
+#projecten {
+    align-items: center;
+    justify-content: center
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+    color: #FF8113;
+    font-size: 6em;
+    font-weight: normal;
+}
+
+.projectBoxen {
+    column-gap: 4.5em;
+    row-gap: 4.5em;
+    flex-wrap: wrap;
+    border: 1px solid greenyellow;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    margin: 0px 0px 100px 0px;
+}
+.blackBox {
+    background-color: #1a1a1a;
+    box-shadow: -6px 6px #FF8113;
+    width: 328px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projecten-container {
+
+}
+.skillBoxen {
+    display: flex
+}
