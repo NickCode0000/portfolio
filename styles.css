@@ -1,18 +1,19 @@
 @font-face {
         font-family: 'Trueno';
-        src: url(/font/Trueno/truenorg.otf);
+        src: url(scr/font/Trueno/truenorg.otf);
         font-weight: normal;
 }
 @font-face {
         font-family: 'Trueno';
-        src: url(/font/Trueno/truenoexbd.otf);
+        src: url(scr/font/Trueno/truenoexbd.otf);
         font-weight: bold;
 }
-@font-face {
-        font-family: 'Trueno';
-        src: url(/font/Trueno/truenoultlt.otf);
-        font-weight: lighter;
-}
+/*}*/
+/*@font-face {*/
+/*        font-family: 'Trueno';*/
+/*        src: url(/font/Trueno/truenoultlt.otf);*/
+/*        font-weight: lighter;*/
+
 body{
     background-color: #232323;
 }
@@ -134,7 +135,7 @@ body{
 }
 #projecten, #skills, #overMij {
     align-items: center;
-    justify-content: center
+    justify-content: center;
     text-align: center;
     margin: 100px 0px 100px 0px;
     color: #FF8113;
@@ -185,11 +186,14 @@ body{
     margin: 0px 0px 100px 0px;
 }
 .skillbox {
-    display: flex
+    display: flex;
     flex-direction: column;
     align-items: center;
 /*    border: 1px solid white;*/
     text-align: center;
     width: 210px;
-
+}
+#pole {
+    position: absolute;
+    top: 0px;
 }
