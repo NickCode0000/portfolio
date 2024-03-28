@@ -135,7 +135,7 @@ body{
     font-family: 'Trueno';
     align-items: center;
 }
-#projecten, #skills, #overMij {
+#projecten, #skills, #overMij, #educatie {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -196,8 +196,12 @@ body{
     width: 210px;
 }
 
+.poleBox {
+
+}
 
 #pole {
     position: absolute;
-    top: 600px;
+    left: 50%; /* Position the left side of the image at the horizontal center of its container */
+    transform: translateX(-50%); /* Move the image back by half of its width to center it horizontally */
 }
