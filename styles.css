@@ -196,8 +196,11 @@ body{
     width: 210px;
 }
 
-.poleBox {
 
+.poleBox {
+    border: 10px solid red;
+    width: 200px;
+    height: 500px;
 }
 
 #pole {
