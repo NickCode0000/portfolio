@@ -8,18 +8,23 @@
         src: url(scr/font/Trueno/truenoexbd.otf);
         font-weight: bold;
 }
-/*}*/
-/*@font-face {*/
-/*        font-family: 'Trueno';*/
-/*        src: url(/font/Trueno/truenoultlt.otf);*/
-/*        font-weight: lighter;*/
+@font-face {
+    font-family: 'Trueno';
+    src: url(scr/font/Trueno/truenosbd.otf);
+    font-weight: 999;
+}
+@font-face {
+    font-family: 'Trueno';
+    src: url(scr/font/Trueno/truenoultlt.otf);
+    font-weight: 888;
+}
 
 body{
     background-color: #232323;
 }
 .ikBen-container{
     padding-left: 10%;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     height: 850px;
     display: flex;
     flex-direction: column;
@@ -125,7 +130,7 @@ body{
 .projecten-container {
     position: relative;
 
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     color: white;
     height: auto;
     min-height: 950px;
@@ -162,11 +167,33 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-color: transparent;
+}
+.blackBox:hover {
+    box-shadow: -10px 10px #FF8113;
+
+    #boulsImage {
+        filter: drop-shadow(-6px 6px #FF8113);
+    }
+}
+.blackBox:active {
+    box-shadow: 0 0 #FF8113;
+
+    #boulsImage {
+        filter: drop-shadow(0 0 transparent);
+    }
+}
+
+
+
+
+#boulsImage {
+    filter: drop-shadow(-3px 3px #FF8113);
 }
 
 .skills-container {
     background-color: #1F1F1F;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     color: white;
     height: auto;
     min-height: 950px;
@@ -205,7 +232,7 @@ body{
 .educatie-container {
     position: absolute;
 
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     color: white;
     height: auto;
     min-height: 950px;
@@ -216,7 +243,7 @@ body{
     align-items: center;
 }
 .pole-box {
-    border: 1px solid greenyellow;
+    /*border: 1px solid greenyellow;*/
     width: 1px;
     height: 1400px;
 
@@ -246,7 +273,7 @@ body{
 
 .educatie-container {
     position: relative;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     color: white;
     height: auto;
     min-height: 950px;
@@ -280,4 +307,117 @@ body{
 
 .pole-container {
     display: flex;
+}
+#educatie {
+    margin: 200px auto 150px;
+}
+
+@media (max-width: 768px) {
+
+
+    /*ik ben een SOFTWARE DEVELOPER PAGINA HIERONDER*/
+
+    .ikBen-container {
+        padding-left: 2%; /* Adjust padding */
+    }
+    #ikBenEen {
+        font-size: 2em; /* Adjust font size */
+    }
+    #software {
+        font-size: 4em; /* Adjust font size */
+    }
+    #inOp {
+        font-size: calc(0.8em/2);
+    }
+    .inOp-container {
+        margin: calc(10px/2);
+        width: calc(132px/2);
+        height: calc(30px/2);
+    }
+    .box {
+        margin-left: calc(10px/2);
+        padding: calc(10px/2);
+        margin-bottom: calc(14px/2);
+        height: calc(1px/2);
+        width: calc(1px/2);
+    }
+    /*titles*/
+    #projecten, #skills, #overMij, #educatie {
+        margin: calc(100px/2) 0 calc(100px/2) 0;
+        font-size: calc(6em/2);
+    }
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+
+    width: 500px;
+    max-width: 80%;
+
+    background-color: #1F1F1F;
+    border: 2px solid #FF8113;
+    height: 600px;
+    box-shadow: 0px 0px 74px -26px rgba(255,129,19,0.46);
+}
+.title {
+    display: flex;
+    color: #FF8113;
+    font-size: 3em;
+    font-family: Trueno, serif;
+    font-weight: 999;
+    justify-content: center;
+    margin: 35px;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-body {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 12px;
+    font-weight: 999;
+    letter-spacing: 1px;
+}
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.close-button {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: transparent;
+    font-size: 1.5em;
+}
+.gitLogo {
+    position: absolute;
+    left: 18px;
+    bottom: 15px;
+}
+.gitLogo:hover {
+    filter: drop-shadow(0 0 2px #FF8113);
+}
+.gitLogo:active {
+    filter: drop-shadow(0 0 0px #FF8113);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Nick Veltheer</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="javaScript.js"></script>
 </head>
 <body>
 
@@ -44,10 +45,25 @@
     <div class="projecten-container">
         <h1 ID = projecten>PROJECTEN</h1>
         <div class="projectBoxen">
-            <div class="blackBox"><img src="scr/images/boulsLogo.png" height="165" width="165"/></div>
-            <div class="blackBox"></div>
-            <div class="blackBox"><img src="scr/images/ovLogo.png" height="165" width="165"/></div>
+            <button class="blackBox"><img id="boulsImage" src="scr/images/boulsLogo.png" height="165" width="165"/></button>
+
+            <button data-modal-target="#modal" class="blackBox">Open Modal</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">ZorgApp</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Project ZorgApp was een collegeproject waarbij we een programma moesten schrijven in Java. Het programma gaf gebruikers verschillende rechten, zodat ze specifieke informatie konden bekijken, zoals medicatie die niet zichtbaar was voor andere gebruikers. We hebben ook functionaliteit toegevoegd om bepaalde gegevens te wijzigen. Bovendien bevatte de app een BMI-grafiek en een gezondheidsschaal en nog meer.
+                </div>
+                <a href="https://github.com/NickCode0000/ZorgApp.git" target="_blank" class="gitLogo">
+                    <img src="scr/images/githubOrange.png" height="35" width="35"/>
+                </a>
+            </div>
+
+            <button class="blackBox"><img src="scr/images/ovLogo.png" height="165" width="165"/></button>
         </div>
+        <div id="overlay"></div>
     </div>
     <div class="skills-container">
         <h1 ID = skills>SKILLS</h1>
