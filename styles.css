@@ -379,6 +379,7 @@ body{
 }
 
 .modal-body {
+    margin-top: 25px;
     margin-left: 15%;
     margin-right: 15%;
     font-size: 12px;
@@ -420,4 +421,30 @@ body{
 }
 .gitLogo:active {
     filter: drop-shadow(0 0 0px #FF8113);
+}
+.ovPopup-Container {
+    display: flex;
+    column-gap: 17px;
+    justify-content: center;
+
+img {
+    width: 205px;
+    border-radius: 12px;
+
+}
+
+
+
+    #ovPopupSup-Container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        justify-content: center;
+
+    }
+
+    #ovSecondPopupSup-Container{
+
+    }
+
 }
